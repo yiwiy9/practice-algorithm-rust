@@ -21,9 +21,13 @@ fn main() {
                 dp[i + 1][j + 1] %= MOD;
             }
         }
-        dp[i + 1][MATCH_S.len()] += dp[i][MATCH_S.len()];
-        dp[i + 1][MATCH_S.len()] %= MOD;
     }
 
-    println!("{}", dp[n][MATCH_S.len()])
+    let mut ans = 0;
+    for dp_i in dp.iter() {
+        ans += dp_i[MATCH_S.len()];
+        ans %= MOD;
+    }
+
+    println!("{}", ans)
 }
