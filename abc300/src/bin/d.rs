@@ -6,14 +6,7 @@ fn main() {
     }
 
     let c_upper = (n as f64 / 12.0).sqrt() as usize;
-    let is_primes = eratosthenes_sieve(c_upper);
-
-    let mut primes = vec![];
-    for (x, &is_prime) in is_primes.iter().enumerate() {
-        if is_prime {
-            primes.push(x);
-        }
-    }
+    let primes = eratosthenes_sieve(c_upper);
 
     let mut cnt = 0;
     for (c_i, c) in primes.iter().enumerate().rev() {
@@ -34,12 +27,14 @@ fn main() {
     println!("{}", cnt);
 }
 
-pub fn eratosthenes_sieve(n: usize) -> Vec<bool> {
+pub fn eratosthenes_sieve(n: usize) -> Vec<usize> {
+    let mut primes = vec![];
     let mut is_prime = vec![true; n + 1];
     is_prime[0] = false;
     is_prime[1] = false;
     for i in 2..=n {
         if is_prime[i] {
+            primes.push(i);
             let mut j = i * 2;
             while j <= n {
                 is_prime[j] = false;
@@ -47,5 +42,5 @@ pub fn eratosthenes_sieve(n: usize) -> Vec<bool> {
             }
         }
     }
-    is_prime
+    primes
 }
