@@ -22,6 +22,6 @@ cases:
 
 extend:
   - type: Text
-    path: "./d"
+    path: "./abc136_d"
     in: /in/*.txt
     out: /out/*.txt

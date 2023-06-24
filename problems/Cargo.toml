@@ -1,14 +1,19 @@
 [package]
-name = "abc136"
+name = "problems"
 version = "0.1.0"
 edition = "2018"
 
 [package.metadata.cargo-compete.bin]
-abc136-d = { alias = "d", problem = "https://atcoder.jp/contests/abc136/tasks/abc136_d" }
+abc255-d = { alias = "abc255_d", problem = "https://atcoder.jp/contests/abc255/tasks/abc255_d"}
+abc136-d = { alias = "abc136_d", problem = "https://atcoder.jp/contests/abc136/tasks/abc136_d"}
+
+[[bin]]
+name = "abc255-d"
+path = "./src/bin/abc255_d.rs"
 
 [[bin]]
 name = "abc136-d"
-path = "src/bin/d.rs"
+path = "src/bin/abc136_d.rs"
 
 [dependencies]
 num = "=0.2.1"
