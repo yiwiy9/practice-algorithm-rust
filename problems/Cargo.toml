@@ -15,6 +15,7 @@ jsc2021-d = { alias = "jsc2021_d", problem = "https://atcoder.jp/contests/jsc202
 abc264-c = { alias = "abc264_c", problem = "https://atcoder.jp/contests/abc264/tasks/abc264_c"}
 abc211-d = { alias = "abc211_d", problem = "https://atcoder.jp/contests/abc211/tasks/abc211_d"}
 abc215-d = { alias = "abc215_d", problem = "https://atcoder.jp/contests/abc215/tasks/abc215_d"}
+abc169-d = { alias = "abc169_d", problem = "https://atcoder.jp/contests/abc169/tasks/abc169_d"}
 
 [[bin]]
 name = "abc255-d"
@@ -59,6 +60,10 @@ path = "src/bin/abc211_d.rs"
 [[bin]]
 name = "abc215-d"
 path = "src/bin/abc215_d.rs"
+
+[[bin]]
+name = "abc169-d"
+path = "src/bin/abc169_d.rs"
 
 [dependencies]
 num = "=0.2.1"
