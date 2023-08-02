@@ -1,5 +1,8 @@
 use proconio::input;
 
+/**
+ * 尺取り法(しゃくとり法)
+ */
 fn main() {
     input! {
         n: usize,
