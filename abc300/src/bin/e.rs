@@ -7,6 +7,7 @@ const MOD: usize = 998244353;
  * https://atcoder.jp/contests/abc300/tasks/abc300_e
  * https://atcoder.jp/contests/abc300/editorial/6279
  *
+ * 確率DP
  * 現時点から答えを満たす確率 = （次の地点から答えを満たす確率）の和
  */
 fn main() {

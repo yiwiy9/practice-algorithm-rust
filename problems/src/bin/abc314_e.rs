@@ -4,6 +4,7 @@ use proconio::input;
  * https://atcoder.jp/contests/abc314/tasks/abc314_e
  * https://atcoder.jp/contests/abc314/editorial/6956
  *
+ * 期待値DP
  * 0の場合は遷移しないので要注意！
  * 0以外の値が出るまでに支払う金額をCiを各ルーレットごとに計算する
  * 試行回数の期待値は1/p
