@@ -7,6 +7,7 @@ edition = "2021"
 abc212-d = { alias = "abc212_d", problem = "https://atcoder.jp/contests/abc212/tasks/abc212_d" }
 abc213-d = { alias = "abc213_d", problem = "https://atcoder.jp/contests/abc213/tasks/abc213_d"}
 abc214-d = { alias = "abc214_d", problem = "https://atcoder.jp/contests/abc214/tasks/abc214_d"}
+abc215-d = { alias = "abc215_d", problem = "https://atcoder.jp/contests/abc215/tasks/abc215_d"}
 
 [[bin]]
 name = "abc212-d"
@@ -19,6 +20,10 @@ path = "src/bin/abc213_d.rs"
 [[bin]]
 name = "abc214-d"
 path = "src/bin/abc214_d.rs"
+
+[[bin]]
+name = "abc215-d"
+path = "src/bin/abc215_d.rs"
 
 [dependencies]
 ac-library-rs = "=0.1.1"
