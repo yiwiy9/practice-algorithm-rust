@@ -43,6 +43,7 @@ abc247-d = { alias = "abc247_d", problem = "https://atcoder.jp/contests/abc247/t
 abc257-d = { alias = "abc257_d", problem = "https://atcoder.jp/contests/abc257/tasks/abc257_d"}
 abc262-d = { alias = "abc262_d", problem = "https://atcoder.jp/contests/abc262/tasks/abc262_d"}
 abc268-d = { alias = "abc268_d", problem = "https://atcoder.jp/contests/abc268/tasks/abc268_d"}
+abc270-d = { alias = "abc270_d", problem = "https://atcoder.jp/contests/abc270/tasks/abc270_d"}
 
 [[bin]]
 name = "abc212-d"
@@ -199,6 +200,10 @@ path = "src/bin/abc262_d.rs"
 [[bin]]
 name = "abc268-d"
 path = "src/bin/abc268_d.rs"
+
+[[bin]]
+name = "abc270-d"
+path = "src/bin/abc270_d.rs"
 
 [dependencies]
 ac-library-rs = "=0.1.1"
