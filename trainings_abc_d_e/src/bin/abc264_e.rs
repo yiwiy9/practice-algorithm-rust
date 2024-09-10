@@ -53,8 +53,11 @@ fn main() {
         }
 
         dsu.merge(root_u, root_v);
-        // マージ後の root は変わるので再取得
-        has_energy[dsu.leader(root_u)] = has_energy[root_u] | has_energy[root_v];
+        // マージ後の root を再取得しない場合
+        has_energy[root_u] |= has_energy[root_v];
+        has_energy[root_v] = has_energy[root_u];
+        // // マージ後の root は変わるので再取得 ← 嘘。↑でも通る
+        // has_energy[dsu.leader(root_u)] = has_energy[root_u] | has_energy[root_v];
         ans.push(has_energy_cnt);
     }
 
