@@ -71,6 +71,7 @@ abc307-e = { alias = "abc307_e", problem = "https://atcoder.jp/contests/abc307/t
 abc232-e = { alias = "abc232_e", problem = "https://atcoder.jp/contests/abc232/tasks/abc232_e"}
 abc310-e = { alias = "abc310_e", problem = "https://atcoder.jp/contests/abc310/tasks/abc310_e"}
 abc327-e = { alias = "abc327_e", problem = "https://atcoder.jp/contests/abc327/tasks/abc327_e"}
+abc338-e = { alias = "abc338_e", problem = "https://atcoder.jp/contests/abc338/tasks/abc338_e"}
 
 [[bin]]
 name = "abc212-d"
@@ -339,6 +340,10 @@ path = "src/bin/abc310_e.rs"
 [[bin]]
 name = "abc327-e"
 path = "src/bin/abc327_e.rs"
+
+[[bin]]
+name = "abc338-e"
+path = "src/bin/abc338_e.rs"
 
 [dependencies]
 ac-library-rs = "=0.1.1"
