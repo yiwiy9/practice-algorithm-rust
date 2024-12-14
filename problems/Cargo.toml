@@ -145,6 +145,15 @@ abc347-c = { alias = "abc347_c", problem = "https://atcoder.jp/contests/abc347/t
 abc342-d = { alias = "abc342_d", problem = "https://atcoder.jp/contests/abc342/tasks/abc342_d"}
 abc357-d = { alias = "abc357_d", problem = "https://atcoder.jp/contests/abc357/tasks/abc357_d"}
 abc127-f = { alias = "abc127_f", problem = "https://atcoder.jp/contests/abc127/tasks/abc127_f"}
+abc313-c = { alias = "abc313_c", problem = "https://atcoder.jp/contests/abc313/tasks/abc313_c"}
+abc238-d = { alias = "abc238_d", problem = "https://atcoder.jp/contests/abc238/tasks/abc238_d"}
+abc333-e = { alias = "abc333_e", problem = "https://atcoder.jp/contests/abc333/tasks/abc333_e"}
+abc263-d = { alias = "abc263_d", problem = "https://atcoder.jp/contests/abc263/tasks/abc263_d"}
+abc219-d = { alias = "abc219_d", problem = "https://atcoder.jp/contests/abc219/tasks/abc219_d"}
+abc246-d = { alias = "abc246_d", problem = "https://atcoder.jp/contests/abc246/tasks/abc246_d"}
+abc264-e = { alias = "abc264_e", problem = "https://atcoder.jp/contests/abc264/tasks/abc264_e"}
+abc269-d = { alias = "abc269_d", problem = "https://atcoder.jp/contests/abc269/tasks/abc269_d"}
+abc339-d = { alias = "abc339_d", problem = "https://atcoder.jp/contests/abc339/tasks/abc339_d"}
 
 [[bin]]
 name = "abc255-d"
@@ -709,6 +718,42 @@ path = "src/bin/abc357_d.rs"
 [[bin]]
 name = "abc127-f"
 path = "src/bin/abc127_f.rs"
+
+[[bin]]
+name = "abc313-c"
+path = "src/bin/abc313_c.rs"
+
+[[bin]]
+name = "abc238-d"
+path = "src/bin/abc238_d.rs"
+
+[[bin]]
+name = "abc333-e"
+path = "src/bin/abc333_e.rs"
+
+[[bin]]
+name = "abc263-d"
+path = "src/bin/abc263_d.rs"
+
+[[bin]]
+name = "abc219-d"
+path = "src/bin/abc219_d.rs"
+
+[[bin]]
+name = "abc246-d"
+path = "src/bin/abc246_d.rs"
+
+[[bin]]
+name = "abc264-e"
+path = "src/bin/abc264_e.rs"
+
+[[bin]]
+name = "abc269-d"
+path = "src/bin/abc269_d.rs"
+
+[[bin]]
+name = "abc339-d"
+path = "src/bin/abc339_d.rs"
 
 [dependencies]
 ac-library-rs = "=0.1.1"
