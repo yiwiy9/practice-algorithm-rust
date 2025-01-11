@@ -1,0 +1,18 @@
+---
+type: Batch
+timelimit: 2s
+match: Lines
+
+cases:
+  - name: sample1
+    in: "AO\nBO"
+    out: 25 25 25 25
+  - name: sample2
+    in: "AB\nOO"
+    out: 50 50 0 0
+
+extend:
+  - type: Text
+    path: "./2920"
+    in: /in/*.txt
+    out: /out/*.txt
