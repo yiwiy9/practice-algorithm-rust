@@ -9,6 +9,7 @@ edition = "2021"
 2921_yukicoder = { alias = "2921", problem = "https://yukicoder.me/problems/no/2921"}
 2922_yukicoder = { alias = "2922", problem = "https://yukicoder.me/problems/no/2922"}
 2923_yukicoder = { alias = "2923", problem = "https://yukicoder.me/problems/no/2923"}
+2927_yukicoder = { alias = "2927", problem = "https://yukicoder.me/problems/no/2927"}
 
 [[bin]]
 name = "2919_yukicoder"
@@ -29,6 +30,10 @@ path = "src/bin/2922.rs"
 [[bin]]
 name = "2923_yukicoder"
 path = "src/bin/2923.rs"
+
+[[bin]]
+name = "2927_yukicoder"
+path = "src/bin/2927.rs"
 
 [dependencies]
 ac-library-rs = "=0.1.1"
