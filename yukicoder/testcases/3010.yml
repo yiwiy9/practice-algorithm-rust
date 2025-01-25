@@ -1,0 +1,21 @@
+---
+type: Batch
+timelimit: 2s
+match: Lines
+
+cases:
+  - name: sample1
+    in: "4 7\nxxooooo 1000\noooooxo 1400\noooxxox 1300\nooxoxxx 1200"
+    out: "2"
+  - name: sample2
+    in: "3 5\noooox 1500\nooxxo 1100\nxxxxx 800"
+    out: "0"
+  - name: sample3
+    in: "8 10\nooooooxxxx 1500\noooxoxoxox 1600\nxxoxxxxxxx 400\nooooxxxxxx 600\noooooooooo 2300\nxoxxxoxoxo 1200\noooxoxoxox 1300\nooooxxxxxx 400"
+    out: "3"
+
+extend:
+  - type: Text
+    path: "./3010"
+    in: /in/*.txt
+    out: /out/*.txt

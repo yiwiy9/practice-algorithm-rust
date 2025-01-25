@@ -6,11 +6,20 @@ edition = "2021"
 [package.metadata.cargo-compete.bin]
 2919_yukicoder = { alias = "2919", problem = "https://yukicoder.me/problems/no/2919" }
 2920_yukicoder = { alias = "2920", problem = "https://yukicoder.me/problems/no/2920" }
-2921_yukicoder = { alias = "2921", problem = "https://yukicoder.me/problems/no/2921"}
-2922_yukicoder = { alias = "2922", problem = "https://yukicoder.me/problems/no/2922"}
-2923_yukicoder = { alias = "2923", problem = "https://yukicoder.me/problems/no/2923"}
-2927_yukicoder = { alias = "2927", problem = "https://yukicoder.me/problems/no/2927"}
-2930_yukicoder = { alias = "2930", problem = "https://yukicoder.me/problems/no/2930"}
+2921_yukicoder = { alias = "2921", problem = "https://yukicoder.me/problems/no/2921" }
+2922_yukicoder = { alias = "2922", problem = "https://yukicoder.me/problems/no/2922" }
+2923_yukicoder = { alias = "2923", problem = "https://yukicoder.me/problems/no/2923" }
+2927_yukicoder = { alias = "2927", problem = "https://yukicoder.me/problems/no/2927" }
+2930_yukicoder = { alias = "2930", problem = "https://yukicoder.me/problems/no/2930" }
+3010_yukicoder = { alias = "3010", problem = "https://yukicoder.me/problems/no/3010" }
+3011_yukicoder = { alias = "3011", problem = "https://yukicoder.me/problems/no/3011" }
+3012_yukicoder = { alias = "3012", problem = "https://yukicoder.me/problems/no/3012" }
+3013_yukicoder = { alias = "3013", problem = "https://yukicoder.me/problems/no/3013" }
+3014_yukicoder = { alias = "3014", problem = "https://yukicoder.me/problems/no/3014" }
+3015_yukicoder = { alias = "3015", problem = "https://yukicoder.me/problems/no/3015" }
+3016_yukicoder = { alias = "3016", problem = "https://yukicoder.me/problems/no/3016" }
+3017_yukicoder = { alias = "3017", problem = "https://yukicoder.me/problems/no/3017" }
+3018_yukicoder = { alias = "3018", problem = "https://yukicoder.me/problems/no/3018" }
 
 [[bin]]
 name = "2919_yukicoder"
@@ -39,6 +48,42 @@ path = "src/bin/2927.rs"
 [[bin]]
 name = "2930_yukicoder"
 path = "src/bin/2930.rs"
+
+[[bin]]
+name = "3010_yukicoder"
+path = "src/bin/3010.rs"
+
+[[bin]]
+name = "3011_yukicoder"
+path = "src/bin/3011.rs"
+
+[[bin]]
+name = "3012_yukicoder"
+path = "src/bin/3012.rs"
+
+[[bin]]
+name = "3013_yukicoder"
+path = "src/bin/3013.rs"
+
+[[bin]]
+name = "3014_yukicoder"
+path = "src/bin/3014.rs"
+
+[[bin]]
+name = "3015_yukicoder"
+path = "src/bin/3015.rs"
+
+[[bin]]
+name = "3016_yukicoder"
+path = "src/bin/3016.rs"
+
+[[bin]]
+name = "3017_yukicoder"
+path = "src/bin/3017.rs"
+
+[[bin]]
+name = "3018_yukicoder"
+path = "src/bin/3018.rs"
 
 [dependencies]
 ac-library-rs = "=0.1.1"

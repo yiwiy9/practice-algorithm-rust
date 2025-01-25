@@ -1,0 +1,12 @@
+---
+type: Batch
+timelimit: 2s
+match: Lines
+
+cases: []
+
+extend:
+  - type: Text
+    path: "./3013"
+    in: /in/*.txt
+    out: /out/*.txt
