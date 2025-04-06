@@ -29,9 +29,10 @@ fn main() {
     println!("{}", ans);
 }
 
-/// n の平方根を整数で求める
+/// f64の仮数部は53bitなので、nが2^53を超えると誤差が生まれる
+/// そのため、u64の平方根を求める関数を自前で実装する必要がある
 /// https://rsk0315.hatenablog.com/entry/2023/11/07/221428
-fn u64_floor_sqrt(n: u64) -> u64 {
+pub fn u64_floor_sqrt(n: u64) -> u64 {
     let tmp = (n as f64).sqrt() as u64;
     let tmp_m1 = tmp.saturating_sub(1);
     if tmp_m1 * (tmp_m1 + 2) < n {
