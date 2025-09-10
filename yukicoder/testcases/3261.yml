@@ -1,0 +1,20 @@
+---
+type: Batch
+timelimit: 2s
+match: Lines
+
+cases:
+  - name: sample1
+    in: |
+      2 8
+      ..yiwiy9
+      9yiwiy..
+    out: |
+      ..yiwiY9
+      9Yiwiy..
+
+extend:
+  - type: Text
+    path: "./3261"
+    in: /in/*.txt
+    out: /out/*.txt

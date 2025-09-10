@@ -1,0 +1,30 @@
+---
+type: Batch
+timelimit: 2s 500ms
+match: Lines
+
+cases:
+  - name: sample1
+    in: "3 5\n200 1 1\n600 1 3\n1000 1 4\n2\n3 4 3 5\n1 5 4 5"
+    out: "3000\n2200"
+  - name: sample2
+    in: "5 10\n9 1 2\n1 1 3\n8 2 3\n1 1 5\n9 4 7\n3\n1 8 6 8\n5 6 6 6\n2 5 2 5"
+    out: "31\n5\n6"
+  - name: sample3
+    in: |
+      2 8
+      10 1 3
+      15 4 5
+      2
+      1 5 1 3
+      2 1 6 8
+    out: "35\n60"
+  - name: sample4
+    in: "2 200000\n9 1 15\n181 2 2\n3\n2 3 5 9\n2 181181 1 200000\n2 2 2 2"
+    out: "850\n36199936\n-55"
+
+extend:
+  - type: Text
+    path: "./3265"
+    in: /in/*.txt
+    out: /out/*.txt

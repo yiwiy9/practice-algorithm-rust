@@ -20,6 +20,14 @@ edition = "2021"
 3016_yukicoder = { alias = "3016", problem = "https://yukicoder.me/problems/no/3016" }
 3017_yukicoder = { alias = "3017", problem = "https://yukicoder.me/problems/no/3017" }
 3018_yukicoder = { alias = "3018", problem = "https://yukicoder.me/problems/no/3018" }
+3259_yukicoder = { alias = "3259", problem = "https://yukicoder.me/problems/no/3259"}
+3260_yukicoder = { alias = "3260", problem = "https://yukicoder.me/problems/no/3260"}
+3261_yukicoder = { alias = "3261", problem = "https://yukicoder.me/problems/no/3261"}
+3262_yukicoder = { alias = "3262", problem = "https://yukicoder.me/problems/no/3262"}
+3263_yukicoder = { alias = "3263", problem = "https://yukicoder.me/problems/no/3263"}
+3264_yukicoder = { alias = "3264", problem = "https://yukicoder.me/problems/no/3264"}
+3265_yukicoder = { alias = "3265", problem = "https://yukicoder.me/problems/no/3265"}
+3266_yukicoder = { alias = "3266", problem = "https://yukicoder.me/problems/no/3266"}
 
 [[bin]]
 name = "2919_yukicoder"
@@ -84,6 +92,38 @@ path = "src/bin/3017.rs"
 [[bin]]
 name = "3018_yukicoder"
 path = "src/bin/3018.rs"
+
+[[bin]]
+name = "3259_yukicoder"
+path = "src/bin/3259.rs"
+
+[[bin]]
+name = "3260_yukicoder"
+path = "src/bin/3260.rs"
+
+[[bin]]
+name = "3261_yukicoder"
+path = "src/bin/3261.rs"
+
+[[bin]]
+name = "3262_yukicoder"
+path = "src/bin/3262.rs"
+
+[[bin]]
+name = "3263_yukicoder"
+path = "src/bin/3263.rs"
+
+[[bin]]
+name = "3264_yukicoder"
+path = "src/bin/3264.rs"
+
+[[bin]]
+name = "3265_yukicoder"
+path = "src/bin/3265.rs"
+
+[[bin]]
+name = "3266_yukicoder"
+path = "src/bin/3266.rs"
 
 [dependencies]
 ac-library-rs = "=0.1.1"
