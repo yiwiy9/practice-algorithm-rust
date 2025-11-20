@@ -237,6 +237,7 @@ abc270-e = { alias = "abc270_e", problem = "https://atcoder.jp/contests/abc270/t
 abc247-e = { alias = "abc247_e", problem = "https://atcoder.jp/contests/abc247/tasks/abc247_e"}
 abc338-e = { alias = "abc338_e", problem = "https://atcoder.jp/contests/abc338/tasks/abc338_e"}
 abc412-d = { alias = "abc412_d", problem = "https://atcoder.jp/contests/abc412/tasks/abc412_d"}
+abc242-d = { alias = "abc242_d", problem = "https://atcoder.jp/contests/abc242/tasks/abc242_d"}
 
 [[bin]]
 name = "abc255-d"
@@ -1169,6 +1170,10 @@ path = "src/bin/abc338_e.rs"
 [[bin]]
 name = "abc412-d"
 path = "src/bin/abc412_d.rs"
+
+[[bin]]
+name = "abc242-d"
+path = "src/bin/abc242_d.rs"
 
 [dependencies]
 rpds = "=1.1.1"
