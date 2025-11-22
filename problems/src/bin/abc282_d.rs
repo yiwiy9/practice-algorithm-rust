@@ -1,6 +1,8 @@
-use ac_library::Dsu;
 use proconio::{input, marker::Usize1};
 
+/// https://atcoder.jp/contests/abc282/tasks/abc282_d
+/// https://atcoder.jp/contests/abc282/editorial/5397
+/// 余事象で考える癖をつけると楽に解ける
 fn main() {
     input! {
         n: usize,
@@ -9,59 +11,52 @@ fn main() {
     }
 
     let mut graph = vec![vec![]; n];
-    let mut dsu = Dsu::new(n);
     for (u, v) in uv {
         graph[u].push(v);
         graph[v].push(u);
-        dsu.merge(u, v);
     }
 
     let mut color = vec![-1; n];
-    for i in 0..n {
-        if color[i] != -1 {
+    let mut ans = n * (n - 1) / 2 - m;
+    for v in 0..n {
+        if color[v] != -1 {
             continue;
         }
-        if !dfs(&graph, &mut color, i, 0) {
+
+        let (b_cnt, w_cnt) = dfs(&graph, &mut color, v, 0);
+        if b_cnt == -1 {
             println!("0");
             return;
         }
+        let b_cnt_u = b_cnt as usize;
+        let w_cnt_u = w_cnt as usize;
+        ans -= b_cnt_u * (b_cnt_u - 1) / 2;
+        ans -= w_cnt_u * (w_cnt_u - 1) / 2;
     }
 
-    let mut black_cnt = vec![0; n];
-    let mut white_cnt = vec![0; n];
-    for i in 0..n {
-        if color[i] == 0 {
-            black_cnt[dsu.leader(i)] += 1;
-        } else {
-            white_cnt[dsu.leader(i)] += 1;
-        }
-    }
-
-    let mut ans = 0;
-    for i in 0..n {
-        ans += n - dsu.size(i);
-        if color[i] == 0 {
-            ans += white_cnt[dsu.leader(i)] - graph[i].len();
-        } else {
-            ans += black_cnt[dsu.leader(i)] - graph[i].len();
-        }
-    }
-
-    println!("{}", ans / 2);
+    println!("{}", ans);
 }
 
-fn dfs(graph: &Vec<Vec<usize>>, color: &mut Vec<i32>, v: usize, cur: i32) -> bool {
+fn dfs(graph: &Vec<Vec<usize>>, color: &mut Vec<i32>, v: usize, cur: i32) -> (i64, i64) {
+    let mut res = if cur == 0 { (1, 0) } else { (0, 1) };
     color[v] = cur;
+
     for &next_v in &graph[v] {
         if color[next_v] != -1 {
             if color[next_v] == cur {
-                return false;
+                return (-1, -1);
             }
             continue;
         }
-        if !dfs(graph, color, next_v, cur ^ 1) {
-            return false;
+
+        let (b_cnt, w_cnt) = dfs(graph, color, next_v, cur ^ 1);
+        if b_cnt == -1 {
+            return (-1, -1);
         }
+
+        res.0 += b_cnt;
+        res.1 += w_cnt;
     }
-    true
+
+    res
 }
