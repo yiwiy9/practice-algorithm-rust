@@ -6,6 +6,7 @@ edition = "2021"
 [package.metadata.cargo-compete.bin]
 joi2008yo-e = { alias = "joi2008yo_e", problem = "https://atcoder.jp/contests/joi2008yo/tasks/joi2008yo_e" }
 joi2008ho-c = { alias = "joi2008ho_c", problem = "https://atcoder.jp/contests/joi2008ho/tasks/joi2008ho_c"}
+joigsp2025-e = { alias = "joigsp2025_e", problem = "https://atcoder.jp/contests/joigsp2025/tasks/joigsp2025_e"}
 
 [[bin]]
 name = "joi2008yo-e"
@@ -14,6 +15,10 @@ path = "src/bin/joi2008yo_e.rs"
 [[bin]]
 name = "joi2008ho-c"
 path = "src/bin/joi2008ho_c.rs"
+
+[[bin]]
+name = "joigsp2025-e"
+path = "src/bin/joigsp2025_e.rs"
 
 [dependencies]
 rpds = "=1.1.1"
