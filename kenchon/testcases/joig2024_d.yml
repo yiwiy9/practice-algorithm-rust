@@ -1,0 +1,40 @@
+---
+type: Batch
+timelimit: 2s
+match: Lines
+
+cases:
+  - name: sample1
+    in: |
+      3
+      97 79 7
+      20 2 21
+    out: |
+      20
+  - name: sample2
+    in: |
+      4
+      8 97 996 9995
+      1 2 3 4
+    out: |
+      46
+  - name: sample3
+    in: |
+      1
+      500000000
+      500000000
+    out: |
+      10
+  - name: sample4
+    in: |
+      7
+      436981378 523812834 456708479 413571178 506402783 598271009 523936624
+      401203104 501634329 506090236 527167431 485527116 439442403 568364549
+    out: |
+      463
+
+extend:
+  - type: Text
+    path: "./joig2024_d"
+    in: /in/*.txt
+    out: /out/*.txt
