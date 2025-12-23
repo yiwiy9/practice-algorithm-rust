@@ -20,6 +20,7 @@ joi2023ho-a = { alias = "joi2023ho_a", problem = "https://atcoder.jp/contests/jo
 joig2023-d = { alias = "joig2023_d", problem = "https://atcoder.jp/contests/joig2023-open/tasks/joig2023_d"}
 joigsc2022-a = { alias = "joigsc2022_a", problem = "https://atcoder.jp/contests/joigsc2022/tasks/joigsc2022_a"}
 joig2021-d = { alias = "joig2021_d", problem = "https://atcoder.jp/contests/joig2021-open/tasks/joig2021_d"}
+joi2020ho-b = { alias = "joi2020ho_b", problem = "https://atcoder.jp/contests/joi2020ho/tasks/joi2020ho_b"}
 
 [[bin]]
 name = "joi2008yo-e"
@@ -84,6 +85,10 @@ path = "src/bin/joigsc2022_a.rs"
 [[bin]]
 name = "joig2021-d"
 path = "src/bin/joig2021_d.rs"
+
+[[bin]]
+name = "joi2020ho-b"
+path = "src/bin/joi2020ho_b.rs"
 
 [dependencies]
 rpds = "=1.1.1"
