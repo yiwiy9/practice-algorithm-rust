@@ -1,0 +1,40 @@
+---
+type: Batch
+timelimit: 1s
+match: Lines
+
+cases:
+  - name: sample1
+    in: |
+      3 5
+      JOIJO
+      IJOOO
+      IIJIJ
+      JO
+      IJ
+    out: |
+      3
+  - name: sample2
+    in: |
+      2 6
+      JOJOJO
+      OJOJOJ
+      OJ
+      JO
+    out: |
+      2
+  - name: sample3
+    in: |
+      2 2
+      JI
+      IJ
+      JJ
+      JJ
+    out: |
+      0
+
+extend:
+  - type: Text
+    path: "./joi2014ho1"
+    in: /in/*.txt
+    out: /out/*.txt
