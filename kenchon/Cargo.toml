@@ -37,6 +37,7 @@ joisc2008-origami = { alias = "joisc2008_origami", problem = "https://atcoder.jp
 joi2009yo-c = { alias = "joi2009yo_c", problem = "https://atcoder.jp/contests/joi2009yo/tasks/joi2009yo_c"}
 joi2009ho-b = { alias = "joi2009ho_b", problem = "https://atcoder.jp/contests/joi2009ho/tasks/joi2009ho_b"}
 joi2010yo-e = { alias = "joi2010yo_e", problem = "https://atcoder.jp/contests/joi2010yo/tasks/joi2010yo_e"}
+joi2010ho-c = { alias = "joi2010ho_c", problem = "https://atcoder.jp/contests/joi2010ho/tasks/joi2010ho_c"}
 
 [[bin]]
 name = "joi2008yo-e"
@@ -161,6 +162,10 @@ path = "src/bin/joi2009ho_b.rs"
 [[bin]]
 name = "joi2010yo-e"
 path = "src/bin/joi2010yo_e.rs"
+
+[[bin]]
+name = "joi2010ho-c"
+path = "src/bin/joi2010ho_c.rs"
 
 [dependencies]
 rpds = "=1.1.1"
