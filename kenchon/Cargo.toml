@@ -44,6 +44,7 @@ joisc2011-banner = { alias = "joisc2011_banner", problem = "https://atcoder.jp/c
 joisc2011-ioi = { alias = "joisc2011_ioi", problem = "https://atcoder.jp/contests/joisc2011/tasks/joisc2011_ioi"}
 joi2012yo-e = { alias = "joi2012yo_e", problem = "https://atcoder.jp/contests/joi2012yo/tasks/joi2012yo_e"}
 joi2012ho3 = { problem = "https://atcoder.jp/contests/joi2012ho/tasks/joi2012ho3"}
+joi2013ho1 = { problem = "https://atcoder.jp/contests/joi2013ho/tasks/joi2013ho1"}
 
 [[bin]]
 name = "joi2008yo-e"
