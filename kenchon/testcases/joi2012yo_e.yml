@@ -1,0 +1,31 @@
+---
+type: Batch
+timelimit: 10s
+match: Lines
+
+cases:
+  - name: sample1
+    in: |
+      8 4
+      0 1 0 1 0 1 1 1
+      0 1 1 0 0 1 0 0
+      1 0 1 0 1 1 1 1
+      0 1 1 0 1 0 1 0
+    out: |
+      64
+  - name: sample2
+    in: |
+      8 5
+      0 1 1 1 0 1 1 1
+      0 1 0 0 1 1 0 0
+      1 0 0 1 1 1 1 1
+      0 1 0 1 1 0 1 0
+      0 1 1 0 1 1 0 0
+    out: |
+      56
+
+extend:
+  - type: Text
+    path: "./joi2012yo_e"
+    in: /in/*.txt
+    out: /out/*.txt

@@ -42,6 +42,7 @@ joisc2010-stairs = { alias = "joisc2010_stairs", problem = "https://atcoder.jp/c
 joi2011ho2 = { problem = "https://atcoder.jp/contests/joi2011ho/tasks/joi2011ho2"}
 joisc2011-banner = { alias = "joisc2011_banner", problem = "https://atcoder.jp/contests/joisc2011/tasks/joisc2011_banner"}
 joisc2011-ioi = { alias = "joisc2011_ioi", problem = "https://atcoder.jp/contests/joisc2011/tasks/joisc2011_ioi"}
+joi2012yo-e = { alias = "joi2012yo_e", problem = "https://atcoder.jp/contests/joi2012yo/tasks/joi2012yo_e"}
 
 [[bin]]
 name = "joi2008yo-e"
@@ -182,6 +183,10 @@ path = "src/bin/joisc2011_banner.rs"
 [[bin]]
 name = "joisc2011-ioi"
 path = "src/bin/joisc2011_ioi.rs"
+
+[[bin]]
+name = "joi2012yo-e"
+path = "src/bin/joi2012yo_e.rs"
 
 [dependencies]
 rpds = "=1.1.1"
