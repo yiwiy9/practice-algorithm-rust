@@ -55,6 +55,7 @@ abc385-c = { alias = "abc385_c", problem = "https://atcoder.jp/contests/abc385/t
 abc149-d = { alias = "abc149_d", problem = "https://atcoder.jp/contests/abc149/tasks/abc149_d"}
 abc105-d = { alias = "abc105_d", problem = "https://atcoder.jp/contests/abc105/tasks/abc105_d"}
 abc367-d = { alias = "abc367_d", problem = "https://atcoder.jp/contests/abc367/tasks/abc367_d"}
+joi2025ho-b = { alias = "joi2025ho_b", problem = "https://atcoder.jp/contests/joi2025ho/tasks/joi2025ho_b"}
 
 [[bin]]
 name = "joi2008yo-e"
@@ -239,6 +240,10 @@ path = "src/bin/abc105_d.rs"
 [[bin]]
 name = "abc367-d"
 path = "src/bin/abc367_d.rs"
+
+[[bin]]
+name = "joi2025ho-b"
+path = "src/bin/joi2025ho_b.rs"
 
 [dependencies]
 rpds = "=1.1.1"
