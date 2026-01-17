@@ -1,0 +1,44 @@
+---
+type: Batch
+timelimit: 2s
+match: Lines
+
+cases:
+  - name: sample1
+    in: |
+      1 1 3 22
+      5
+      10
+      9 2 3
+    out: |
+      5
+  - name: sample2
+    in: |
+      1 2 2 100
+      11
+      33 44
+      40 60
+    out: |
+      15
+  - name: sample3
+    in: |
+      2 2 2 0
+      15 23
+      5 16
+      23 45
+    out: |
+      73
+  - name: sample4
+    in: |
+      3 3 3 50
+      12 5 5
+      2 19 37
+      10 5 15
+    out: |
+      14
+
+extend:
+  - type: Text
+    path: "./joi2025_yo2_c"
+    in: /in/*.txt
+    out: /out/*.txt
