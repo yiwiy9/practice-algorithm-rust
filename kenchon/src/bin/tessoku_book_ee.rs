@@ -21,6 +21,7 @@ fn main() {
         let right = x.upper_bound(&right_x);
 
         if left == right {
+            // 空区間を渡すとACLセグ木落ちる
             continue;
         }
 
