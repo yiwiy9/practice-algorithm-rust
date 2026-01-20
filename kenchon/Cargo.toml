@@ -68,6 +68,7 @@ tessoku-book-bf = { alias = "tessoku_book_bf", problem = "https://atcoder.jp/con
 tessoku-book-bg = { alias = "tessoku_book_bg", problem = "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_bg"}
 abc185-f = { alias = "abc185_f", problem = "https://atcoder.jp/contests/abc185/tasks/abc185_f"}
 typical90-ak = { alias = "typical90_ak", problem = "https://atcoder.jp/contests/typical90/tasks/typical90_ak"}
+tessoku-book-ee = { alias = "tessoku_book_ee", problem = "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_ee"}
 
 [[bin]]
 name = "joi2008yo-e"
@@ -304,6 +305,10 @@ path = "src/bin/abc185_f.rs"
 [[bin]]
 name = "typical90-ak"
 path = "src/bin/typical90_ak.rs"
+
+[[bin]]
+name = "tessoku-book-ee"
+path = "src/bin/tessoku_book_ee.rs"
 
 [dependencies]
 rpds = "=1.1.1"
