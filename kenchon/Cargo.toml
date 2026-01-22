@@ -73,6 +73,7 @@ abc441-e = { alias = "abc441_e", problem = "https://atcoder.jp/contests/abc441/t
 abc437-f = { alias = "abc437_f", problem = "https://atcoder.jp/contests/abc437/tasks/abc437_f"}
 abc436-f = { alias = "abc436_f", problem = "https://atcoder.jp/contests/abc436/tasks/abc436_f"}
 abc432-e = { alias = "abc432_e", problem = "https://atcoder.jp/contests/abc432/tasks/abc432_e"}
+abc339-e = { alias = "abc339_e", problem = "https://atcoder.jp/contests/abc339/tasks/abc339_e"}
 
 [[bin]]
 name = "joi2008yo-e"
@@ -329,6 +330,10 @@ path = "src/bin/abc436_f.rs"
 [[bin]]
 name = "abc432-e"
 path = "src/bin/abc432_e.rs"
+
+[[bin]]
+name = "abc339-e"
+path = "src/bin/abc339_e.rs"
 
 [dependencies]
 rpds = "=1.1.1"
