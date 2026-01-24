@@ -80,6 +80,7 @@ abc341-e = { alias = "abc341_e", problem = "https://atcoder.jp/contests/abc341/t
 abc231-f = { alias = "abc231_f", problem = "https://atcoder.jp/contests/abc231/tasks/abc231_f"}
 abc221-e = { alias = "abc221_e", problem = "https://atcoder.jp/contests/abc221/tasks/abc221_e"}
 tessoku-book-ef = { alias = "tessoku_book_ef", problem = "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_ef"}
+abl-d = { alias = "abl_d", problem = "https://atcoder.jp/contests/abl/tasks/abl_d"}
 
 [[bin]]
 name = "joi2008yo-e"
@@ -364,6 +365,10 @@ path = "src/bin/abc221_e.rs"
 [[bin]]
 name = "tessoku-book-ef"
 path = "src/bin/tessoku_book_ef.rs"
+
+[[bin]]
+name = "abl-d"
+path = "src/bin/abl_d.rs"
 
 [dependencies]
 rpds = "=1.1.1"
