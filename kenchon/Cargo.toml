@@ -82,6 +82,7 @@ abc221-e = { alias = "abc221_e", problem = "https://atcoder.jp/contests/abc221/t
 tessoku-book-ef = { alias = "tessoku_book_ef", problem = "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_ef"}
 abl-d = { alias = "abl_d", problem = "https://atcoder.jp/contests/abl/tasks/abl_d"}
 practice2-j = { alias = "practice2_j", problem = "https://atcoder.jp/contests/practice2/tasks/practice2_j"}
+joigsp2024-e = { alias = "joigsp2024_e", problem = "https://atcoder.jp/contests/joigsp2024/tasks/joigsp2024_e"}
 
 [[bin]]
 name = "joi2008yo-e"
@@ -374,6 +375,10 @@ path = "src/bin/abl_d.rs"
 [[bin]]
 name = "practice2-j"
 path = "src/bin/practice2_j.rs"
+
+[[bin]]
+name = "joigsp2024-e"
+path = "src/bin/joigsp2024_e.rs"
 
 [dependencies]
 rpds = "=1.1.1"
