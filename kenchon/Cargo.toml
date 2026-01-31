@@ -84,6 +84,7 @@ abl-d = { alias = "abl_d", problem = "https://atcoder.jp/contests/abl/tasks/abl_
 practice2-j = { alias = "practice2_j", problem = "https://atcoder.jp/contests/practice2/tasks/practice2_j"}
 joigsp2024-e = { alias = "joigsp2024_e", problem = "https://atcoder.jp/contests/joigsp2024/tasks/joigsp2024_e"}
 typical90-i = { alias = "typical90_i", problem = "https://atcoder.jp/contests/typical90/tasks/typical90_i"}
+abc429-f = { alias = "abc429_f", problem = "https://atcoder.jp/contests/abc429/tasks/abc429_f"}
 
 [[bin]]
 name = "joi2008yo-e"
@@ -384,6 +385,10 @@ path = "src/bin/joigsp2024_e.rs"
 [[bin]]
 name = "typical90-i"
 path = "src/bin/typical90_i.rs"
+
+[[bin]]
+name = "abc429-f"
+path = "src/bin/abc429_f.rs"
 
 [dependencies]
 rpds = "=1.1.1"
