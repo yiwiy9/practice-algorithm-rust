@@ -87,6 +87,7 @@ typical90-i = { alias = "typical90_i", problem = "https://atcoder.jp/contests/ty
 abc429-f = { alias = "abc429_f", problem = "https://atcoder.jp/contests/abc429/tasks/abc429_f"}
 abc415-f = { alias = "abc415_f", problem = "https://atcoder.jp/contests/abc415/tasks/abc415_f"}
 abc408-f = { alias = "abc408_f", problem = "https://atcoder.jp/contests/abc408/tasks/abc408_f"}
+abc389-f = { alias = "abc389_f", problem = "https://atcoder.jp/contests/abc389/tasks/abc389_f"}
 
 [[bin]]
 name = "joi2008yo-e"
@@ -399,6 +400,10 @@ path = "src/bin/abc415_f.rs"
 [[bin]]
 name = "abc408-f"
 path = "src/bin/abc408_f.rs"
+
+[[bin]]
+name = "abc389-f"
+path = "src/bin/abc389_f.rs"
 
 [dependencies]
 rpds = "=1.1.1"
