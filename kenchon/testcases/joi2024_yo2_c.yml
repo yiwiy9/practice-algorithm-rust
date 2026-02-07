@@ -1,0 +1,54 @@
+---
+type: Batch
+timelimit: 1s
+match: Lines
+
+cases:
+  - name: sample1
+    in: |
+      6
+      GRBBRG
+      3 4 5
+    out: |
+      16
+  - name: sample2
+    in: |
+      3
+      BRG
+      1000000000 1000000000 1
+    out: |
+      3
+  - name: sample3
+    in: |
+      3
+      GRB
+      9 11 14
+    out: |
+      27
+  - name: sample4
+    in: |
+      9
+      RGBRGBRGB
+      1000000000 1000000000 1
+    out: |
+      0
+  - name: sample5
+    in: |
+      20
+      BRGBRGBBGBBBGRRBBBRB
+      1000000000 1000000000 1
+    out: |
+      2000000008
+  - name: sample6
+    in: |
+      23
+      BBGRGBBBBBBGRRGGGGBGGGG
+      786820955 792349124 710671229
+    out: |
+      10107224827
+
+extend:
+  - type: Text
+    path: "./joi2024_yo2_c"
+    in: /in/*.txt
+    out: /out/*.txt
