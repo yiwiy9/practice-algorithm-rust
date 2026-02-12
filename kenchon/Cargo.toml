@@ -95,6 +95,7 @@ abc223-f = { alias = "abc223_f", problem = "https://atcoder.jp/contests/abc223/t
 joi2024-yo2-c = { alias = "joi2024_yo2_c", problem = "https://atcoder.jp/contests/joi2024yo2/tasks/joi2024_yo2_c"}
 abc186-f = { alias = "abc186_f", problem = "https://atcoder.jp/contests/abc186/tasks/abc186_f"}
 jsc2021-f = { alias = "jsc2021_f", problem = "https://atcoder.jp/contests/jsc2021/tasks/jsc2021_f"}
+tessoku-book-fq = { alias = "tessoku_book_fq", problem = "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_fq"}
 
 [[bin]]
 name = "joi2008yo-e"
@@ -439,6 +440,10 @@ path = "src/bin/abc186_f.rs"
 [[bin]]
 name = "jsc2021-f"
 path = "src/bin/jsc2021_f.rs"
+
+[[bin]]
+name = "tessoku-book-fq"
+path = "src/bin/tessoku_book_fq.rs"
 
 [dependencies]
 rpds = "=1.1.1"
