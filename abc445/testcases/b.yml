@@ -1,0 +1,40 @@
+---
+type: Batch
+timelimit: ~
+match: Lines
+
+cases:
+  - name: sample1
+    in: |
+      4
+      apple
+      blueberry
+      coconut
+      dragonfruit
+    out: |
+      ...apple...
+      .blueberry.
+      ..coconut..
+      dragonfruit
+  - name: sample2
+    in: |
+      6
+      abc
+      d
+      efghi
+      jkl
+      mnopq
+      r
+    out: |
+      .abc.
+      ..d..
+      efghi
+      .jkl.
+      mnopq
+      ..r..
+
+extend:
+  - type: Text
+    path: "./b"
+    in: /in/*.txt
+    out: /out/*.txt
