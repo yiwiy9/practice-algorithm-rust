@@ -103,6 +103,7 @@ joigsc2022-e = { alias = "joigsc2022_e", problem = "https://atcoder.jp/contests/
 abc326-c = { alias = "abc326_c", problem = "https://atcoder.jp/contests/abc326/tasks/abc326_c"}
 abc038-c = { alias = "abc038_c", problem = "https://atcoder.jp/contests/abc038/tasks/abc038_c"}
 joigsc2022-b = { alias = "joigsc2022_b", problem = "https://atcoder.jp/contests/joigsc2022/tasks/joigsc2022_b"}
+abc130-d = { alias = "abc130_d", problem = "https://atcoder.jp/contests/abc130/tasks/abc130_d"}
 
 [[bin]]
 name = "joi2008yo-e"
@@ -479,6 +480,10 @@ path = "src/bin/abc038_c.rs"
 [[bin]]
 name = "joigsc2022-b"
 path = "src/bin/joigsc2022_b.rs"
+
+[[bin]]
+name = "abc130-d"
+path = "src/bin/abc130_d.rs"
 
 [dependencies]
 rpds = "=1.1.1"
