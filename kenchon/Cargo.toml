@@ -105,6 +105,7 @@ abc038-c = { alias = "abc038_c", problem = "https://atcoder.jp/contests/abc038/t
 joigsc2022-b = { alias = "joigsc2022_b", problem = "https://atcoder.jp/contests/joigsc2022/tasks/joigsc2022_b"}
 abc130-d = { alias = "abc130_d", problem = "https://atcoder.jp/contests/abc130/tasks/abc130_d"}
 tessoku-book-cl = { alias = "tessoku_book_cl", problem = "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_cl"}
+typical90-bx = { alias = "typical90_bx", problem = "https://atcoder.jp/contests/typical90/tasks/typical90_bx"}
 
 [[bin]]
 name = "joi2008yo-e"
@@ -489,6 +490,10 @@ path = "src/bin/abc130_d.rs"
 [[bin]]
 name = "tessoku-book-cl"
 path = "src/bin/tessoku_book_cl.rs"
+
+[[bin]]
+name = "typical90-bx"
+path = "src/bin/typical90_bx.rs"
 
 [dependencies]
 rpds = "=1.1.1"
