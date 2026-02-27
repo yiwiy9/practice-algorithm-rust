@@ -94,6 +94,7 @@ typical90-087 = { alias = "087", problem = "https://atcoder.jp/contests/typical9
 typical90-088 = { alias = "088", problem = "https://atcoder.jp/contests/typical90/tasks/typical90_cj" }
 typical90-089 = { alias = "089", problem = "https://atcoder.jp/contests/typical90/tasks/typical90_ck" }
 typical90-090 = { alias = "090", problem = "https://atcoder.jp/contests/typical90/tasks/typical90_cl" }
+typical90-i = { alias = "typical90_i", problem = "https://atcoder.jp/contests/typical90/tasks/typical90_i"}
 
 # [[bin]]
 # name = "typical90-001"
@@ -497,3 +498,7 @@ rustc-hash = "=1.1.0"
 smallvec = "=1.2.0"
 
 [dev-dependencies]
+
+[[bin]]
+name = "typical90-i"
+path = "src/bin/typical90_i.rs"

@@ -1,11 +1,19 @@
 use proconio::input;
-use std::f64::consts::PI;
-use superslice::*;
 
+/// 尺取り法 / two pointers / sliding window（テンプレ1：right-for, left-while）
+/// left=0 で開始
+/// for right in 0..n {        // right は 0..n-1 を走る
+///     add(a[right]);         // 右端を window に追加
+///     while invalid {        // 壊れている間だけ「出して進める」
+///         remove(a[left]);   // 左端を window から削除
+///         left += 1;         // remove の後に left を進める
+///     }
+///     update_answer();       // ここで必ず valid（window=[left..=right]）
+/// }
 fn main() {
     input! {
         n: usize,
-        xy: [(i64,i64); n],
+        xy: [(i64, i64); n],
     }
 
     let mut ans: f64 = 0.0;
@@ -21,24 +29,19 @@ fn main() {
         shifted_xy.sort_by(|a, b| cmp_by_argument_default_i64(*a, *b));
 
         let m = shifted_xy.len();
-        for idx in 0..m {
-            let a = shifted_xy[idx];
-            let target = (-a.0, -a.1); // 180度回転
-
-            let pos = shifted_xy.lower_bound_by(|v| cmp_by_argument_default_i64(*v, target));
-
-            for &t in &[pos % m, (pos + m - 1) % m] {
-                let b = shifted_xy[t];
-                let theta = angle_small(a, b); // [0, PI]
-                ans = ans.max(theta);
+        let mut left = 0;
+        for right in 0..2 * m {
+            while angle_ccw(shifted_xy[left % m], shifted_xy[right % m]) < 0.0 {
+                left += 1;
             }
+            ans = ans.max(angle_ccw(shifted_xy[left % m], shifted_xy[right % m]));
         }
     }
 
-    println!("{:.10}", ans * 180.0 / PI);
+    println!("{:.10}", ans / (2.0 * PI) * 360.0);
 }
 
-use std::cmp::Ordering;
+use std::{cmp::Ordering, f64::consts::PI};
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub enum OriginPolicy {
     /// (0,0) を最初に置く（「原点は角度0扱い」みたいにしたい時）
@@ -141,20 +144,25 @@ pub fn sort_by_argument_default_i64<T>(pts: &mut [T], to_xy: impl Fn(&T) -> (i64
 fn dot(ax: i64, ay: i64, bx: i64, by: i64) -> i128 {
     (ax as i128) * (bx as i128) + (ay as i128) * (by as i128)
 }
-/// 2ベクトル a, b のなす角（0..=PI, ラジアン）を返す。
-/// - 数値的に安定な atan2(|cross|, dot) を使う（acos より安全）
+/// ベクトル a から b への「左回り有向角」（-PI..=PI, ラジアン）を返す。
+/// - 数値的に安定な atan2(cross, dot) を使う（符号付き cross を保持）
+/// - cross(a,b) > 0 なら b は a の左側（反時計回り）で、角度は正
+/// - cross(a,b) < 0 なら b は a の右側（時計回り）で、角度は負
 /// - a or b が (0,0) の場合は角度を 0 とみなす（この問題では通常出ないが安全側）
 /// # Examples
 /// - same direction: 0
-/// - right angle: PI/2
-/// - opposite direction: PI
-pub fn angle_small(a: (i64, i64), b: (i64, i64)) -> f64 {
+/// - left 90 deg: +PI/2
+/// - right 90 deg: -PI/2
+/// - opposite direction: PI（または -PI）
+/// # Notes
+/// - 0..2PI の「左回り角」が欲しい場合は、戻り値が負なら +TAU して正規化する
+pub fn angle_ccw(a: (i64, i64), b: (i64, i64)) -> f64 {
     let (ax, ay) = a;
     let (bx, by) = b;
     if (ax == 0 && ay == 0) || (bx == 0 && by == 0) {
         return 0.0;
     }
-    let cr = cross(ax, ay, bx, by).abs() as f64;
+    let cr = cross(ax, ay, bx, by) as f64;
     let dt = dot(ax, ay, bx, by) as f64;
     cr.atan2(dt)
 }
