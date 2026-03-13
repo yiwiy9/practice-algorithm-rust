@@ -113,6 +113,7 @@ arc022-2 = { alias = "arc022_2", problem = "https://atcoder.jp/contests/arc022/t
 abc444-e = { alias = "abc444_e", problem = "https://atcoder.jp/contests/abc444/tasks/abc444_e"}
 abc381-d = { alias = "abc381_d", problem = "https://atcoder.jp/contests/abc381/tasks/abc381_d"}
 abc247-e = { alias = "abc247_e", problem = "https://atcoder.jp/contests/abc247/tasks/abc247_e"}
+arc098-b = { alias = "arc098_b", problem = "https://atcoder.jp/contests/arc098/tasks/arc098_b"}
 
 [[bin]]
 name = "joi2008yo-e"
@@ -529,6 +530,10 @@ path = "src/bin/abc381_d.rs"
 [[bin]]
 name = "abc247-e"
 path = "src/bin/abc247_e.rs"
+
+[[bin]]
+name = "arc098-b"
+path = "src/bin/arc098_b.rs"
 
 [dependencies]
 rpds = "=1.1.1"
