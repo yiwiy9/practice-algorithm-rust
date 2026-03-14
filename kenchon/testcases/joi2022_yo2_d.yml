@@ -1,0 +1,36 @@
+---
+type: Batch
+timelimit: 2s
+match: Lines
+
+cases:
+  - name: sample1
+    in: |
+      5 4
+      1 3 2 4 3
+    out: |
+      8
+  - name: sample2
+    in: |
+      6 3
+      3 7 1 5 6 4
+    out: |
+      21
+  - name: sample3
+    in: |
+      5 2
+      3 3 2 2 1
+    out: |
+      11
+  - name: sample4
+    in: |
+      12 5
+      864814169 716638377 926889183 891468826 217138351 891972397 504371916 678159995 435478604 181254225 760822841 688502728
+    out: |
+      4427122428
+
+extend:
+  - type: Text
+    path: "./joi2022_yo2_d"
+    in: /in/*.txt
+    out: /out/*.txt
