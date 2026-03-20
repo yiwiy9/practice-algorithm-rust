@@ -1,0 +1,54 @@
+---
+type: Batch
+timelimit: 2s 500ms
+match: Lines
+
+cases:
+  - name: sample1
+    in: |
+      5 3
+      ABCBA
+      CCBAB
+      AAAAA
+    out: |
+      3
+      2
+      0
+  - name: sample2
+    in: |
+      2 5
+      AC
+      AC
+      AC
+      AC
+      AC
+    out: |
+      0
+      0
+      0
+      0
+      0
+  - name: sample3
+    in: |
+      13 1
+      ABCCABCBACBAA
+    out: |
+      9
+  - name: sample4
+    in: |
+      13 4
+      CCAAACBAAAABB
+      BBBCCBCCCBCBC
+      CCCAAAABBBBBB
+      AABCBCACBACBA
+    out: |
+      4
+      6
+      2
+      10
+
+extend:
+  - type: Text
+    path: "./joi2021_yo2_b"
+    in: /in/*.txt
+    out: /out/*.txt
