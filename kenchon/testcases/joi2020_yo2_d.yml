@@ -1,0 +1,22 @@
+---
+type: Batch
+timelimit: 2s
+match: Lines
+
+cases:
+  - name: sample1
+    in: |
+      100000 13
+    out: |
+      5
+  - name: sample2
+    in: |
+      4 3
+    out: |
+      3
+
+extend:
+  - type: Text
+    path: "./joi2020_yo2_d"
+    in: /in/*.txt
+    out: /out/*.txt
