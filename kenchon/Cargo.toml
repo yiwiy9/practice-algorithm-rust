@@ -129,6 +129,7 @@ joi2018ho-b = { alias = "joi2018ho_b", problem = "https://atcoder.jp/contests/jo
 joi2018-yo-e = { alias = "joi2018_yo_e", problem = "https://atcoder.jp/contests/joi2018yo/tasks/joi2018_yo_e"}
 joi2017yo-f = { alias = "joi2017yo_f", problem = "https://atcoder.jp/contests/joi2017yo/tasks/joi2017yo_f"}
 joi2017yo-e = { alias = "joi2017yo_e", problem = "https://atcoder.jp/contests/joi2017yo/tasks/joi2017yo_e"}
+joi2017yo-d = { alias = "joi2017yo_d", problem = "https://atcoder.jp/contests/joi2017yo/tasks/joi2017yo_d"}
 
 [[bin]]
 name = "joi2008yo-e"
@@ -609,6 +610,10 @@ path = "src/bin/joi2017yo_f.rs"
 [[bin]]
 name = "joi2017yo-e"
 path = "src/bin/joi2017yo_e.rs"
+
+[[bin]]
+name = "joi2017yo-d"
+path = "src/bin/joi2017yo_d.rs"
 
 [dependencies]
 rpds = "=1.1.1"
