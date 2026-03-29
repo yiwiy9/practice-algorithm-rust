@@ -1,0 +1,27 @@
+---
+type: Batch
+timelimit: ~
+match: Lines
+
+cases:
+  - name: sample1
+    in: |
+      legal
+    out: |
+      Yes
+  - name: sample2
+    in: |
+      atcoder
+    out: |
+      No
+  - name: sample3
+    in: |
+      illegal
+    out: |
+      No
+
+extend:
+  - type: Text
+    path: "./a"
+    in: /in/*.txt
+    out: /out/*.txt
