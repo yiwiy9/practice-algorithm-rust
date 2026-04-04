@@ -1,0 +1,37 @@
+---
+type: Batch
+timelimit: 10s
+match: Lines
+
+cases:
+  - name: sample1
+    in: |
+      5 6
+      ......
+      .939..
+      .3428.
+      .9393.
+      ......
+    out: |
+      3
+  - name: sample2
+    in: |
+      10 10
+      ..........
+      .99999999.
+      .9.323239.
+      .91444449.
+      .91444449.
+      .91444449.
+      .91444449.
+      .91232329.
+      .99999999.
+      ..........
+    out: |
+      35
+
+extend:
+  - type: Text
+    path: "./joi2015yo_e"
+    in: /in/*.txt
+    out: /out/*.txt
