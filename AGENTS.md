@@ -34,6 +34,7 @@ When work produces durable insight, update the contest-local docs.
 - `adr`: changes in policy, evaluation method, or operating rules
 - `plans`: current and near-term training focus
 
+If you modify one document, check the other relevant documents and fix inconsistent references, operating rules, or duplicated policy in the same change.
 Do not add documentation that merely restates facts obvious from directory layout or file names.
 
 ## Problem Review Policy

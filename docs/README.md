@@ -11,10 +11,10 @@
 - 再利用できる実装を snippet 候補として切り出す
 - 今後の方針変更や判断基準を ADR として残す
 
-## 現在地（2026-04-04 時点）
+## 現在地（analysis snapshot: 2026-04-04 / repo state: 2026-04-06）
 
-- 記録されている ABC は `abc284` から `abc451` までの 115 コンテスト分
-- リポジトリ上の最新は `abc451` で、`abc452` はまだ存在しない
+- 記録済みの分析 snapshot は `abc284` から `abc451` までの 115 コンテスト分
+- リポジトリ自体には `abc452` が追加済みで、数値分析への反映は次回更新で行う
 - 最近 25 件の記録済み ABC（`abc422` 〜 `abc451`）では、
   `D` はかなり戦えている一方で、`E` は「到達はするが自力化が弱い」状態
 - コメント付きコードを「解説依存の近似 proxy」とみなすと、
@@ -34,6 +34,7 @@
 ## まず見る場所
 
 - 実力の現在地: [`wiki/current-skill-map.md`](./wiki/current-skill-map.md)
+- 練習方法の基準: [`wiki/practice-strategy.md`](./wiki/practice-strategy.md)
 - 詰まった時の戻り先: [`wiki/stuck-checklist.md`](./wiki/stuck-checklist.md)
 - 直近の調査結果: [`knowledge/2026-04-04-contest-plus-kenchon-weighted-analysis.md`](./knowledge/2026-04-04-contest-plus-kenchon-weighted-analysis.md)
 - 今やること: [`plans/current-plan.md`](./plans/current-plan.md)
