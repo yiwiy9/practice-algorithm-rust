@@ -1,0 +1,26 @@
+---
+type: Batch
+timelimit: 1s
+match: Lines
+
+cases:
+  - name: sample1
+    in: |
+      5 5
+      OIOOI
+      OOIOI
+    out: |
+      7
+  - name: sample2
+    in: |
+      5 9
+      IIIII
+      IIIIIIIII
+    out: |
+      1
+
+extend:
+  - type: Text
+    path: "./joi2013ho2"
+    in: /in/*.txt
+    out: /out/*.txt

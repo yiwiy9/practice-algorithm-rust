@@ -139,6 +139,7 @@ joisc2014-m = { alias = "joisc2014_m", problem = "https://atcoder.jp/contests/jo
 joisc2014-k = { alias = "joisc2014_k", problem = "https://atcoder.jp/contests/joisc2014/tasks/joisc2014_k"}
 joi2014ho3 = { problem = "https://atcoder.jp/contests/joi2014ho/tasks/joi2014ho3"}
 joi2014yo-e = { alias = "joi2014yo_e", problem = "https://atcoder.jp/contests/joi2014yo/tasks/joi2014yo_e"}
+joi2013ho2 = { problem = "https://atcoder.jp/contests/joi2013ho/tasks/joi2013ho2"}
 
 [[bin]]
 name = "joi2008yo-e"
