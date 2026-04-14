@@ -140,6 +140,7 @@ joisc2014-k = { alias = "joisc2014_k", problem = "https://atcoder.jp/contests/jo
 joi2014ho3 = { problem = "https://atcoder.jp/contests/joi2014ho/tasks/joi2014ho3"}
 joi2014yo-e = { alias = "joi2014yo_e", problem = "https://atcoder.jp/contests/joi2014yo/tasks/joi2014yo_e"}
 joi2013ho2 = { problem = "https://atcoder.jp/contests/joi2013ho/tasks/joi2013ho2"}
+joi2013yo-e = { alias = "joi2013yo_e", problem = "https://atcoder.jp/contests/joi2013yo/tasks/joi2013yo_e"}
 
 [[bin]]
 name = "joi2008yo-e"
@@ -656,6 +657,10 @@ path = "src/bin/joisc2014_k.rs"
 [[bin]]
 name = "joi2014yo-e"
 path = "src/bin/joi2014yo_e.rs"
+
+[[bin]]
+name = "joi2013yo-e"
+path = "src/bin/joi2013yo_e.rs"
 
 [dependencies]
 rpds = "=1.1.1"
