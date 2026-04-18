@@ -16,6 +16,8 @@ use proconio::input;
 ///   行にも列にもあるなら交点、行だけなら active な列、列だけなら active な行に置く
 ///   どちらにもないなら active×active の空きマスから 1 つ取って置く
 ///   新しく active になった行/列と既存 active の組を空きマス集合へ追加する
+///
+/// 解説AC
 fn main() {
     input! {
         t: usize,
