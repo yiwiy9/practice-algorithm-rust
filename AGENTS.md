@@ -31,6 +31,7 @@ When work produces durable insight, update the contest-local docs.
 
 - `wiki`: long-lived knowledge, checklists, strategy, snippet guidance
 - `knowledge`: dated analyses, findings, and investigation snapshots
+- `predictions`: contest prediction playbooks and contest-specific prediction logs
 - `adr`: changes in policy, evaluation method, or operating rules
 - `plans`: current and near-term training focus
 

@@ -26,6 +26,7 @@
 
 - [`wiki/`](./wiki): 何度でも見返す恒久知識
 - [`knowledge/`](./knowledge): 調査結果や分析スナップショット
+- [`predictions/`](./predictions): 問題予想の運用ルールと contest ごとの予想ログ
 - [`adr/`](./adr): 方針・運用ルール・判断基準の履歴
 - [`plans/`](./plans): 直近の行動計画とバックログ
 - [`templates/`](./templates): 今後メモを増やすときの雛形
@@ -36,6 +37,8 @@
 - 実力の現在地: [`wiki/current-skill-map.md`](./wiki/current-skill-map.md)
 - 練習方法の基準: [`wiki/practice-strategy.md`](./wiki/practice-strategy.md)
 - 詰まった時の戻り先: [`wiki/stuck-checklist.md`](./wiki/stuck-checklist.md)
+- 問題予想の運用ルール: [`predictions/playbook.md`](./predictions/playbook.md)
+- 直近の問題予想ログ: [`predictions/logs/2026-04-18-abc454.md`](./predictions/logs/2026-04-18-abc454.md)
 - 直近の調査結果: [`knowledge/2026-04-04-contest-plus-kenchon-weighted-analysis.md`](./knowledge/2026-04-04-contest-plus-kenchon-weighted-analysis.md)
 - 今やること: [`plans/current-plan.md`](./plans/current-plan.md)
 
