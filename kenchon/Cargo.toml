@@ -145,6 +145,7 @@ joi2012ho4 = { problem = "https://atcoder.jp/contests/joi2012ho/tasks/joi2012ho4
 joisc2011-deciphering = { alias = "joisc2011_deciphering", problem = "https://atcoder.jp/contests/joisc2011/tasks/joisc2011_deciphering"}
 joi2011ho3 = { problem = "https://atcoder.jp/contests/joi2011ho/tasks/joi2011ho3"}
 joisc2010-finals = { alias = "joisc2010_finals", problem = "https://atcoder.jp/contests/joisc2010/tasks/joisc2010_finals"}
+joi2009ho-c = { alias = "joi2009ho_c", problem = "https://atcoder.jp/contests/joi2009ho/tasks/joi2009ho_c"}
 
 [[bin]]
 name = "joi2008yo-e"
@@ -673,6 +674,10 @@ path = "src/bin/joisc2011_deciphering.rs"
 [[bin]]
 name = "joisc2010-finals"
 path = "src/bin/joisc2010_finals.rs"
+
+[[bin]]
+name = "joi2009ho-c"
+path = "src/bin/joi2009ho_c.rs"
 
 [dependencies]
 rpds = "=1.1.1"

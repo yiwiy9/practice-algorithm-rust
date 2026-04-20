@@ -5,6 +5,12 @@
 This file governs work under `src/contest` only.
 Do not introduce repo-root documentation or repo-root policy files unless explicitly requested.
 
+## Execution Environment
+
+Assume `cargo`, `cargo compete`, `rustfmt`, and related helper scripts are meant to run inside the devcontainer for this repository.
+Do not assume the host machine or an external agent session has the Rust toolchain on `PATH`, even if the workspace files are visible.
+If a command is needed for verification, prefer the devcontainer terminal/context and avoid treating missing host-side `cargo` as a project issue.
+
 ## Objective
 
 The goal is to improve the user's AtCoder performance, especially on recent ABC `E/F`, not to maximize raw solved-count on old problems.
