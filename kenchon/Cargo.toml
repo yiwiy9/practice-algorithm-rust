@@ -150,6 +150,7 @@ joi2009yo-f = { alias = "joi2009yo_f", problem = "https://atcoder.jp/contests/jo
 joisc2008-cheating = { alias = "joisc2008_cheating", problem = "https://atcoder.jp/contests/joisc2008/tasks/joisc2008_cheating"}
 joisc2008-flu = { alias = "joisc2008_flu", problem = "https://atcoder.jp/contests/joisc2008/tasks/joisc2008_flu"}
 joisc2008-sheet = { alias = "joisc2008_sheet", problem = "https://atcoder.jp/contests/joisc2008/tasks/joisc2008_sheet"}
+joisc2008-committee = { alias = "joisc2008_committee", problem = "https://atcoder.jp/contests/joisc2008/tasks/joisc2008_committee"}
 
 [[bin]]
 name = "joi2008yo-e"
@@ -698,6 +699,10 @@ path = "src/bin/joisc2008_flu.rs"
 [[bin]]
 name = "joisc2008-sheet"
 path = "src/bin/joisc2008_sheet.rs"
+
+[[bin]]
+name = "joisc2008-committee"
+path = "src/bin/joisc2008_committee.rs"
 
 [dependencies]
 rpds = "=1.1.1"
